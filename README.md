@@ -1,2 +1,2 @@
 # EnjoyLearning
-Just for fun!
+Here are some technical notes shared by our group, and enjoy learning!
