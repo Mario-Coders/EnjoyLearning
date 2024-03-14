@@ -67,6 +67,7 @@ Consider following operations:
 - t2 time：object pointer of p2 **points to** object of p3. Meanwhile, control block pointer of p2 points to control block of p3 and p2 is destroyed because its ref count becomes zero. 
 - t3 time: control block pointer of p1 points to control block of p2 which do not exist, making p2 a dangling pointer. 
 
+<img width="600"  src="img/shared_ptr_thread_safe.png"/>
 
 The update operation of std::shared_ptr is not thread-safe, because it consist of 2 steps(update of control block and object.) Becareful, dtor is a write operation.
 
